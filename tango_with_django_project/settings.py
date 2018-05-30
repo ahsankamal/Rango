@@ -33,6 +33,12 @@ STATIC_URL = '/static/' # You may find this is already defined as such.
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
+
+#base URL from which all media files will be accessible on your development server
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Absolute path to the media directory
+
 # Application definition
 
 INSTALLED_APPS = (
